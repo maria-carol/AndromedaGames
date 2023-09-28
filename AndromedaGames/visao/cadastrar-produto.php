@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/AndromedaGames/css/estilos.css">
+    <title>Andrômeda Cup - Login</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo_div">
+            <img src="http://localhost/AndromedaGames/imagens/logo.png"></img>
+        </div>
+        <div id="link_div">
+            <a href="http://localhost/AndromedaGames/visao/index.php">Início</a>
+            <a href="http://localhost/AndromedaGames/ginasios.php">Ginásios</a>
+            <a href="http://localhost/AndromedaGames/esportes.php">Esportes</a>
+            <a href="http://localhost/AndromedaGames/atletas.php">Atletas</a>
+            <a href="http://localhost/AndromedaGames/visao/login.php">Login</a>
+        </div>
+    </header>
+    <div id="principal_sobre">
+        <div class="title">
+            <h1 style="text-decoration: underline;">Cadastro de jogos</h1>
+            <br>
+            <h5>Qual será a próxima estrela que brilhará em Andrômeda?</h5>
+    </div>
+    <section class="container-form">
+        <form action="processar-produtos.php" method="POST">
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome do produto" required>
+            <div class="container-radio">
+                <div>
+                    <label for="switch">Switch</label>
+                    <input type="radio" id="switch" name="tipo" value="Switch" checked>
+                </div>
+                <div>
+                    <label for="xbox">Xbox</label>
+                    <input type="radio" id="xbox" name="tipo" value="Xbox">
+                </div>
+                <div>
+                    <label for="Pc">Pc</label>
+                    <input type="radio" id="pc" name="tipo" value="pc">
+                </div>
+                <div>
+                    <label for="playstation">PlayStation</label>
+                    <input type="radio" id="playstation" name="tipo" value="PlayStation">
+                </div>
+            </div>
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" name="descricao" placeholder="Digite uma descrição" required>
+
+            <label for="preco">Preço</label>
+            <input type="text" id="preco" name="preco" placeholder="Digite uma descrição" required>
+
+            <label for="imagem">Envie o banner</label>
+            <input type="file" name="imagem" accept="image/*" id="imagem" placeholder="Envie uma imagem">
+
+            <input type="submit" name="cadastro" class="botao_cadastrar" value="Cadastrar produto"/>
+        </form>
+    
+    </section>
+</main>
+</body>
+</html>
